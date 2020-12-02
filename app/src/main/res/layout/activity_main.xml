@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:visibility="gone"
+        android:id="@+id/text_key"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:ems="10"
+        android:hint="Введіть ключ шифрування 32 символи"
+        android:inputType="text"
+
+        android:maxLength="32" />
+
+    <TextView
+        android:gravity="center"
+        android:text="ключ: 662ede816988e58fb6d057d9d85605e0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/text_crypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Текст для шифрування"
+        android:inputType="text" />
+
+
+    <EditText
+        android:id="@+id/text_decrypt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:ems="10"
+        android:hint="Текст для розшифровувння"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/crypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="зашифрувати" />
+
+        <Button
+            android:id="@+id/decrypt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="розшифрувати" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="visible" />
+
+</LinearLayout>
